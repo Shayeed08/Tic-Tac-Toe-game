@@ -1,0 +1,75 @@
+<!--Index page for Tic Tac Toe game-->
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Our CSS-->
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <section>
+            <!--Game title-->
+            <h1 class="game--title">Tic Tac Toe</h1>
+
+            <!--Buttons to select type of game-->
+            <div class="game--type">
+                <button type="button" id="singlePlayerBtn">Against computer</button>
+                <button type="button" id="twoPlayerBtn">Two players</button>
+            </div>
+
+            <!--Status area to display message to player-->
+            <h2 class="game--status--desc">Status - </h2>
+            <h2 class="game--status">Please select game type from above</h2>
+            
+            <!--Single player name input form-->
+            <div id="single-inputForm">
+                <div id="single-formHead">Please enter player name</div>
+                <form id="singleInputForm">
+                    <label for="single-firstPlayerName">Player 1:</label>
+                    <input type="text" id="single-firstPlayerName"><br>
+                    <button type="button" id="addSinglePlayerNameBtn">Start game</button>
+                </form>
+            </div>
+
+            <!--Two player name input form-->
+            <div id="twoPlayer-inputForm">
+                <div id="twoPlayer-formHead">Please enter both players name</div>
+                <form id="twoPlayerInputForm">
+                    <label for="twoPlayer-firstPlayerName">Player 1:</label>
+                    <input type="text" id="twoPlayer-firstPlayerName"><br>
+                    <label for="twoPlayer-secondPlayerName">Player 2:</label>
+                    <input type="text" id="twoPlayer-secondPlayerName"><br>
+                    <button type="button" id="addTwoPlayerNameBtn">Start game</button>
+                </form>
+            </div>
+
+            <!--Main game area to play game-->
+            <div class="game-container-main">
+                <div class="game--container">
+                    <!--Data-cell-index is used for the DOM manipulation on click-->
+                    <div data-cell-index="0" class="cell"></div>
+                    <div data-cell-index="1" class="cell"></div>
+                    <div data-cell-index="2" class="cell"></div>
+                    <div data-cell-index="3" class="cell"></div>
+                    <div data-cell-index="4" class="cell"></div>
+                    <div data-cell-index="5" class="cell"></div>
+                    <div data-cell-index="6" class="cell"></div>
+                    <div data-cell-index="7" class="cell"></div>
+                    <div data-cell-index="8" class="cell"></div>
+                </div>
+            </div>
+
+            <!--Button to restart the game-->
+            <button class="game--restart">Restart Game</button>
+        </section>
+
+        <script src="js/script.js"></script> <!--Our javascript file-->
+    </body>
+</html>
